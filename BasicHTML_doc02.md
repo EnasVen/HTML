@@ -55,3 +55,5 @@ meta的name屬性值常用如下:
 4. http-equiv代表瀏覽器初始執行的動作，Refresh為重新整理，上例content=3代表3秒後重整一次網頁，後面url代表重整後的導向網站。(不給url就是原網頁重新整理)  
 5. http-equiv="content-type"則是指定網頁編碼須為UTF-8
 
+# body元素
+網頁主要內容都寫在這區，例如段落文字、超連結、圖片影片、表格表單...etc  
