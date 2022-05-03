@@ -134,6 +134,25 @@ ol>(li>(ul>li*2)*3)*2   ol底下創建2個li，每一個li底下包含3個ul，�
 <a href="./Art/hyperlink3.html#bookmark1">跳到另一頁的特定段落1</a>  該網站在.html檔的下一層
 ```
 
+超連結也可以使用email位置，與法如下:  
+```
+<a href="prophet0630@outlook.com"> mail_2_ME </a>
+```
+# HTML - 圖片元素
+圖片元素使用img作為tag名稱，網頁內加入圖片的語法如下:
+```
+<img src="你的路徑" alt="沒顯示圖片時的替代文字" title="滑鼠移到上面時顯示的文字" height="自訂高度" width="自訂高度">
+```
+
+當然，圖片可以與超連結的方結合:  
+```
+<a href="path"> <img src="path"> </a>
+```
+
+# HTML - Figure元素
+figure元素用於定義網頁結構，其於網頁上顯示的初始位置與一般元素不同。  
+figcaption元素為figure元素的標題，必須寫在figure元素內，且一個figure元素內只能放一個figcaption!  
+
 # 其他功能
 HTML註解 : ```<!-- XXX -->``` HoyKey: Ctrl+/  
 CSS註解 : ```/* XXX */```
