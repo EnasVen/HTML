@@ -22,10 +22,15 @@ h1 {...}
 ```
 #a {}
 ```
-複合使用的語法如下:  
+複合使用的語法範例如下:  
 ```
-
+h1,h2 {...}
+div.CLASSNAME {...}
+ul>li>ol>li#A {...}
+.list a:active {...}
+.list>li>a:visited {...}
 ```
+須注意>路徑要完整寫出，因為系統是一層一層往下找!  
 
 # CSS基礎設定
 修改長度或大小等數值時，必須指定單位。  
@@ -49,10 +54,18 @@ color: **rgb(192,80,150)**
 
 # 文字樣式
 文字樣式使用下列屬性作修改(只列出部分):  
-1. text-decoration
-2. text-transform
-3. color
-4. 字型
-5. 字型粗細
-6. 字型類型
-7. 字型大小
+1. text-decoration: none/underline/overline/line-through...
+2. text-transform: none/capitalize/uppercase/lowercase...
+3. color: red/green...
+4. font-family: 標楷體/新細明體...
+5. font-weight: 100~900/normal(400)/bold(700)/bolder/lighter...  
+6. font-style: normal/italic/oblique...
+7. font-size: 絕對大小(xx-small、medium、x-large、larger...)/相對大小(larger、smaller)/長度值(in、cm、pt、em...)/比例值(em、%)  
+
+# 樣式套用
+套用CSS的方法有3種:  
+1. Inline(直接寫在tag內)
+2. Embedding(寫在head內的style元素內)
+3. Linking(寫在head內的link元素內，利用.css檔案載入)
+
+
