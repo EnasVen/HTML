@@ -67,5 +67,8 @@ color: **rgb(192,80,150)**
 1. Inline(直接寫在tag內)
 2. Embedding(寫在head內的style元素內)
 3. Linking(寫在head內的link元素內，利用.css檔案載入)
-
-
+```
+<head>
+<link rel="stylesheet" href="路徑&檔名">
+<\head>
+```
