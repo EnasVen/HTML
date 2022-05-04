@@ -203,3 +203,19 @@ padding和margin的屬性值可以給1個數值，也能給4個數值，給4個�
 ```
 既然有方向之分，這兩個元素也像border-radius一樣有 -top / -right / -bottom / -left 的分支做單一設定。  
 
+# float與clear樣式
+float可將元素設置成浮動樣式，形成文繞圖的效果。  
+HTML的元素預設都是無浮動。  
+須注意當元素被設定成float時，必須要給寬度，且後方元素也會連動被float到同一row上。  
+```
+.t1 {
+   float:right     
+}
+```
+
+clear可以把被float的元素解除float狀態。屬性值可選none、left、right或both  
+```
+p {
+   clear:both     
+}
+```
