@@ -84,7 +84,7 @@ CSS執行順序由上而下，先定義的會被後定義的覆蓋!!
 # 清單樣式
 清單元素ul和ol也可以套用CSS，比較特殊屬性如下:  
 1. 清單符號: list-style-type (none/disc/circle/square/upper-alpha/lower-roman...etc)
-2. 清單圖片: list-style-image (url)
+2. 清單圖片: list-style-image (url:("路徑"))
 3. 清單符號位置: list-style-position (inside/outside)
 首先載入清單樣式:  
 ```
@@ -124,6 +124,8 @@ CSS執行順序由上而下，先定義的會被後定義的覆蓋!!
     </style>
 ```
 接著套用到先前介紹的清單元素上:  
+![Image](https://github.com/EnasVen/HTML/blob/main/HTML_img01.png)  
+可以看到inside屬性值會把圖片放在li內；而outside則將圖片放在li外。  
 
 
 # 超連結selector
