@@ -19,13 +19,46 @@
 ```
 上面的例子利用for指定id=account1的input tag，使用者以滑鼠點擊Name:文字時，便會自動選取這個input欄位!  
 後面的placeholder代表無實際填入deault值(灰色)；autocomplete則代表網頁不會記憶先前的使用者資訊(安全性提升!)  
+不需要給予對應值的屬性還有例如: disabled(直接讓該功能變灰色)、readonly(無法操作但是可被選取，JS的mouseover事件仍然可觸發)  
 
 2. **input:** input元素提供鍵盤單列輸入的功能，常用屬性如下:  
-  - type: text(單行文字輸入)、password(密碼輸入)、button(按鈕)、submit(送出表單資料)、reset(清除表單資訊)  
+  - type: text(單行文字輸入)、password(密碼輸入)、button(按鈕)、submit(送出表單資料的按鈕)、reset(清除表單資訊的按鈕)、radio(單選欄)、checkbox(多選欄)  
   - value: 預設呈現的文字  
   - size: 輸入列的寬度，決定其顯示多少字元寬度  
   - maxlength: 最多輸入幾個字元
 須注意按鈕後續的觸發動作，需要由JavaScript接手完成。  
+單選欄位語法如下:  
+```
+<label for="" class="t1">Gender:</label>
+<label>
+     <input type="radio" name="gender" id="" value="male">Male
+</label>
+<label>
+      <input type="radio" name="gender" id="" value="female">Female
+</label>
+```
+多選欄位語法如下:  
+```
+<label for="" class="t1">Hobby:</label>
+<label>
+    <input type="checkbox" name="hobby" id="" value="sport">Sport
+</label>
+<label>
+    <input type="checkbox" name="hobby" id="" value="music">Music
+</label>
+<label>
+    <input type="checkbox" name="hobby" id="" value="travel">Travel
+</label>
+<label>
+     <input type="checkbox" name="hobby" id="" value="movie">Movie
+</label>
+```
+單選和多選欄位的name值要設定成一樣!(代表同一欄內的選項)  
+題外話，Emmet支援VScode內複雜的設置，這樣的結構當然也可以用簡寫快速完成:  
+```
+div.div01>label.t1+(input:checkbox)*3
+```
+
 
 3. **textarea:** 多行文字輸入，常用屬性如下:  
   - rows: 決定欄位高  
