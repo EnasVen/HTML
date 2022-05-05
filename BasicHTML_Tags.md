@@ -158,6 +158,74 @@ ol>(li>(ul>li*2)*3)*2   ol底下創建2個li，每一個li底下包含3個ul，�
 figure元素用於定義網頁結構，其於網頁上顯示的初始位置與一般元素不同。  
 figcaption元素為figure元素的標題，必須寫在figure元素內，且一個figure元素內只能放一個figcaption!  
 
+# HTML - 表格元素
+table標籤可製作表格，裡面包含以下相關元素:  
+1. tr:宣告一個row
+2. th:存放標題的儲存格
+3. td:存放資料的儲存格
+4. caption:表格標題
+5. thead、tbody與tfoot用來群組化儲存格，方便辨識與管理。
+
+須注意rowspan與colspan屬性需要放在td內。指定該儲存格往後多少格需要以row/col方式合併。  
+另外，caption標籤需要放在table內的首位。  
+語法範例如下:  
+```
+<table class="tb1">
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>Col1</th>
+                <th>Col2</th>
+                <th>Col3</th>
+                <th>Col4</th>
+            </tr>
+            <tr>
+                <th colspan="2">Col1+Col2</th>
+                <!-- <th>Col2</th> -->
+                <th colspan="2">Col3+Col4</th>
+                <!-- <th>Col4</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tb2">1</td>
+                <td class="tb2">2</td>
+                <td class="tb2" rowspan="2">3</td>
+                <td class="tb2">4</td>
+            </tr>
+            <tr>
+                <td class="tb2">1</td>
+                <td class="tb2">2</td>
+                <!-- <td class="tb2">3</td> -->
+                <td class="tb2">4</td>
+            </tr>
+            <tr>
+                <td class="tb2">1</td>
+                <td class="tb2">2</td>
+                <td class="tb2">3</td>
+                <td class="tb2">4</td>
+            </tr>
+            <tr>
+                <td class="tb2">1</td>
+                <td class="tb2">2</td>
+                <td class="tb2">3</td>
+                <td class="tb2">4</td>
+            </tr>
+            <tr>
+                <td class="tb2">1</td>
+                <td class="tb2">2</td>
+                <td class="tb2">3</td>
+                <td class="tb2">4</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+```
+
+
 # 其他功能
 HTML註解 : ```<!-- XXX -->``` HoyKey: Ctrl+/  
 CSS註解 : ```/* XXX */```
