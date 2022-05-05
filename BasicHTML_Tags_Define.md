@@ -12,3 +12,6 @@ HTML將元素(tag)區分為:
 2. inline元素
 
 block元素內能放block & inline元素；但**inline元素內只能放inline元素。**  
+
+# 其他功能
+HTML註解 : ```<!-- XXX -->``` HoyKey: Ctrl+/  
