@@ -60,3 +60,30 @@ h2 {
   font-family: 'Water Brush', cursive;
 }
 ```
+
+# 文字樣式
+1. line-height: 段落的行距需要用line-height屬性設置，但這個值必須要大於字體高度(default字元高度為16px)
+2. text-align: 文字水平對齊，屬性值有right、left以及center
+3. vertical-align: 文字垂直對齊，在div中無效，只能作用於儲存格td，屬性值有bottom、top以及middle
+
+# div文字垂直對齊
+1. 直接將行高設定為div高度(只限無標籤文字或單列不超出div寬度的文字)
+```
+<style>
+    .div01 {
+        width:200px;
+        height:100px;
+        line-height:100px;
+    }
+</style>
+```
+2. 利用padding上下內縮，但要注意這2個值總和不能等於div高度(因為文字本身就有高度，要扣掉後再計算需要padding多少)  
+```
+<style>
+    .div01 {
+        width:200px;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+</style>
+```
