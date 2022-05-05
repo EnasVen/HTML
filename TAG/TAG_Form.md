@@ -22,11 +22,13 @@
 不需要給予對應值的屬性還有例如: disabled(直接讓該功能變灰色)、readonly(無法操作但是可被選取，JS的mouseover事件仍然可觸發)  
 
 2. **input:** input元素提供鍵盤單列輸入的功能，常用屬性如下:  
-  - type: text(單行文字輸入)、password(密碼輸入)、button(按鈕)、submit(送出表單資料的按鈕)、reset(清除表單資訊的按鈕)、radio(單選欄)、checkbox(多選欄)  
+  - type: text(單行文字輸入)、password(密碼輸入)、button(按鈕)、submit(送出表單資料的按鈕)、reset(清除表單資訊的按鈕)、radio(單選欄)、checkbox(多選欄)、file(上傳檔案)  
   - value: 預設呈現的文字  
   - size: 輸入列的寬度，決定其顯示多少字元寬度  
   - maxlength: 最多輸入幾個字元
+上傳檔案的tag內若加上multiple屬性，則代表可以多選上傳。  
 須注意按鈕後續的觸發動作，需要由JavaScript接手完成。  
+
 單選欄位語法如下:  
 ```
 <label for="" class="t1">Gender:</label>
