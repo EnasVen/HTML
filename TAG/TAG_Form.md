@@ -63,7 +63,23 @@ div.div01>label.t1+(input:checkbox)*3
 3. **textarea:** 多行文字輸入，常用屬性如下:  
   - rows: 決定欄位高  
   - cols: 決定欄位寬
-4. 
+4. **select:** 下拉式選單，可以設定單選或複選，選項使用option元素呈現，常用屬性如下:  
+  - multiple: 不須給屬性值，設定後該下拉式選單即為多選。
+  - value: 此屬性值設定在option元素內，為每一個選項的背後設定值
+  - selected: 不須給定屬性值，用來設定初始選取的目標。  
+語法範例如下:  
+```
+<label for="" class="t1">Location:</label>
+<label>
+   <select name="add1" multiple size="2">
+           <option value="A">Planet-A</option>
+           <option value="B" selected>Planet-B</option>
+           <option value="A">Planet-C</option>
+           <option value="A">Planet-D</option>
+           <option value="A">Planet-E</option>
+   </select>
+</label>
+```
 
 
 
