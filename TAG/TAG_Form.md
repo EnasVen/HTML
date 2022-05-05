@@ -83,5 +83,27 @@ div.div01>label.t1+(input:checkbox)*3
 </label>
 ```
 
-
+5. **fieldset & legend:** fieldset用來將表單元件群組化，legend則是群組標題，要放在一開始的位置。  
+語法如下:  
+```
+<fieldset>
+    <legend>BasicInformation</legend>
+    <div class="div01">
+        <label for="account1" class="t1">Name:</label>
+        <input type="text" name="account" id="account1" size="10" placeholder="guest" autofocus
+            autocomplete="off">
+    </div>
+    <div class="div01">
+        <label for="" class="t1">Gender:</label>
+        <label>
+            <input type="radio" name="gender" id="" value="male">Male
+        </label>
+        <label>
+            <input type="radio" name="gender" id="" value="female">Female
+        </label>
+    </div>
+</fieldset>
+```
+群組化的表單，實作demo如下圖:  
+![Image](https://github.com/EnasVen/HTML/blob/main/HTML_img05.png)  
 
